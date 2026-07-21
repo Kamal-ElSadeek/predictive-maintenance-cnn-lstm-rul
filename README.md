@@ -39,6 +39,6 @@ artifacts/
 
 - Raw datasets and trained model artifacts are not included.
 - Historical notebooks retain their original research state, including machine-specific paths, interrupted cells, and known split or validation issues documented in the READMEs.
-- This is an evidence-preserving research archive. It does not silently rewrite a historical notebook and present the altered code as the source of an old metric.
+- This is an evidence-preserving research archive. 
 
 See [`REPRODUCIBILITY_STATUS.md`](REPRODUCIBILITY_STATUS.md) for the current reproduction status of each dataset.
