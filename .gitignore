@@ -1,0 +1,30 @@
+# Raw datasets
+*.h5
+*.hdf5
+*.mat
+train_FD*.txt
+test_FD*.txt
+RUL_FD*.txt
+
+# Trained models and tuner/checkpoint state
+*.keras
+*.h5
+*.ckpt
+*.weights.h5
+checkpoints/
+runs/
+ga_generations/
+tuner_results/
+
+# Generated outputs and local environments
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+*.log
+history.csv
+predictions.csv
+results.csv
+training_history.png
+prediction_results.png
+error_distribution.png

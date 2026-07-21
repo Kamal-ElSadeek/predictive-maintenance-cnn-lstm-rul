@@ -1,0 +1,4 @@
+dataset_id,dataset_name,task,best_code_entry,best_supported_metric,evidence_type,key_limitation
+cmapss_fd003,NASA C-MAPSS FD003,RUL regression,datasets/cmapss_fd003/best_result/best_available_executed_notebook.ipynb,"RMSE 15.032; R2 0.868",executed notebook,"Thesis-reported 14.75 run is missing"
+n_cmapss_ds05,NASA N-CMAPSS DS05,RUL regression,datasets/n_cmapss_ds05/best_result/best_available_executed_notebook.ipynb,"RMSE 6.7927; MAE 5.1498; R2 0.9280",executed notebook,"Tuner training includes its validation subset"
+nasa_battery_b0005,NASA Battery B0005,capacity/SOH regression,datasets/nasa_battery_b0005/best_result/best_available_code_reconstruction.ipynb,"RMSE 0.047; R2 0.877",PDF result plus code reconstruction,"Exact executed source is missing; reconstruction split is nonchronological"
