@@ -1,22 +1,20 @@
 # Reproducibility Status
 
-This repository is ready to publish as a clearly labelled **historical research archive**. It is not yet a clean reproduction package.
+This repository combines a clearly labelled **historical research archive** with clean reproductions where they have been completed. C-MAPSS FD003 is reproduced; N-CMAPSS DS05 and the battery dataset remain archive-status.
 
-## C-MAPSS FD003
+## C-MAPSS FD003 — REPRODUCED
 
-Current status:
+A clean end-to-end rerun of the parallel CNN-LSTM has been completed in a pinned environment (Python 3.8, TensorFlow 2.10.0, recorded in [`artifacts/cmapss_fd003/environment.json`](artifacts/cmapss_fd003/environment.json)):
 
-- the current-PC inventory is complete;
-- the best available executed notebook reports RMSE 15.032 and R2 0.868;
-- the thesis's 14.75 parallel and 14.98 GA execution evidence is still missing.
+- engine-level split: 80 training units, 20 validation units, official test set held out for one-time evaluation;
+- sequence length 30, RUL cap 125, seed 42;
+- single-model test result: **RMSE 14.680; MAE 11.042; R2 0.874** — matching the thesis-reported 14.75 within 0.07 RMSE;
+- 5-seed ensemble (seeds 42, 7, 123, 2024, 31415), mean of predictions: **test RMSE 13.391; MAE 9.793; R2 0.895**;
+- full metrics for train, exhaustive-window validation, test-like validation, and test are in [`artifacts/cmapss_fd003/parallel_reconstruction/metrics.json`](artifacts/cmapss_fd003/parallel_reconstruction/metrics.json) and [`ensemble_metrics.json`](artifacts/cmapss_fd003/parallel_reconstruction/ensemble_metrics.json).
 
-Clean-rerun blockers:
+Code entry point: [`datasets/cmapss_fd003/01_cmapss_fd003_parallel_cnn_lstm_reconstruction.ipynb`](datasets/cmapss_fd003/01_cmapss_fd003_parallel_cnn_lstm_reconstruction.ipynb).
 
-- raw FD003 data is not included;
-- final environment, model weights, and tuner artifacts are missing;
-- the historical preprocessing and validation protocol needs explicit reconstruction.
-
-Next action: retrieve the university-PC items in `datasets/cmapss_fd003/CURRENT_PC_CHECKPOINT.md`, then rerun the selected architectures with documented engine-level splits.
+Remaining historical gap: the original executed notebooks behind the thesis's 14.75 parallel and 14.98 GA figures are not preserved in this archive. The clean rerun above supersedes them as verifiable evidence.
 
 ## N-CMAPSS DS05
 

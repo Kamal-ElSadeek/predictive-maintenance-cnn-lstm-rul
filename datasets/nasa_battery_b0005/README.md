@@ -17,7 +17,7 @@ The closest received source-code reconstruction is [`best_result/best_available_
 2. Open the best-code reconstruction and locate the parallel CNN-LSTM construction and evaluation sections.
 3. Read [`MANIFEST.md`](MANIFEST.md) to compare the sequential, parallel, Hyperband, and GA evidence.
 
-The result and the notebook are linked as the best **evidence/code pair** available on this PC; they are not represented as a clean reproduced run.
+The result and the notebook are linked as the best **evidence/code pair** available in this archive; they are not represented as a clean reproduced run.
 
 ## Received result comparison
 

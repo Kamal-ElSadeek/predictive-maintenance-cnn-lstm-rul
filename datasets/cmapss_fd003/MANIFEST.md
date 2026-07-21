@@ -2,7 +2,8 @@
 
 | File | Experiment | Recorded outcome | Role |
 |---|---|---:|---|
-| `best_result/best_available_executed_notebook.ipynb` | Parallel/GA-submitted lineage | RMSE 15.032; R2 0.868 | Best available executed notebook |
+| `01_cmapss_fd003_parallel_cnn_lstm_reconstruction.ipynb` | Clean parallel CNN-LSTM reproduction | Test RMSE 14.680 (single, seed 42); 13.391 (5-seed ensemble) | Reproduced result — primary entry point |
+| `best_result/best_available_executed_notebook.ipynb` | Parallel/GA-submitted lineage | RMSE 15.032; R2 0.868 | Best available historical executed notebook |
 | `archive/notebooks/01_lstm_baseline.ipynb` | LSTM baseline | RMSE 15.746 | Archived experiment |
 | `archive/notebooks/02_ga_early_attempt.ipynb` | Early GA attempt | No valid optimized result | Archived failure |
 | `archive/notebooks/03_ga_longer_memory.ipynb` | Longer-memory GA | best-individual RMSE 17.745 | Archived experiment |
@@ -14,4 +15,4 @@
 | `archive/evidence/02_parallel_run_rmse_15_402_export.pdf` | Export of improved parallel run | RMSE 15.402 | PDF evidence |
 | `archive/evidence/03_ga_early_failed_export.pdf` | Export of early GA attempt | Failure, no valid optimized metric | PDF evidence |
 
-Not retained twice: exact duplicate and serialization-only duplicate uploads are documented in the earlier audit. The final 14.75 parallel and 14.98 GA run files were not available on the current PC.
+Not retained twice: exact duplicate and serialization-only duplicate uploads are documented in the earlier audit. The original executed files for the thesis's 14.75 parallel and 14.98 GA runs are not preserved in this archive; the clean reproduction listed above supersedes them as verifiable evidence.
