@@ -16,7 +16,7 @@ Its saved final evaluation on units 2, 4, and 8 reports:
 
 The notebook also reports per-unit RMSE values of 6.27, 8.15, and 6.63 for units 2, 4, and 8 respectively.
 
-This is the lowest completed test RMSE found in all received N-CMAPSS notebooks. The newly received closing batch documents the 30-trial tuning and continuation lineage but does not contain a lower final test result.
+This is the lowest completed test RMSE across all my N-CMAPSS notebooks. The closing batch documents the 30-trial tuning and continuation lineage but does not contain a lower final test result.
 
 ## How to trace the evidence
 

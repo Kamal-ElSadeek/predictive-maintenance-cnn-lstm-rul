@@ -4,7 +4,7 @@
 
 | File | Recorded outcome | Status |
 |---|---:|---|
-| `best_result/best_available_executed_notebook.ipynb` | RMSE 6.7927; MAE 5.1498; R2 0.9280 | Strongest received test result; test units isolated, tuner train/validation overlap remains |
+| `best_result/best_available_executed_notebook.ipynb` | RMSE 6.7927; MAE 5.1498; R2 0.9280 | Strongest test result; test units isolated, tuner train/validation overlap remains |
 
 ## Archived notebooks
 

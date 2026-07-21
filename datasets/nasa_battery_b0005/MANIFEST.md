@@ -4,8 +4,8 @@
 
 | File | Role | Outcome |
 |---|---|---:|
-| `best_result/best_available_code_reconstruction.ipynb` | Closest received real-B0005 code reconstruction for sequential/parallel CNN-LSTM work | No saved execution output; split requires correction |
-| `archive/evidence/02_parallel_cnn_lstm_rmse_0_047.pdf` | Evidence for the strongest received result | RMSE 0.047; R2 0.877 |
+| `best_result/best_available_code_reconstruction.ipynb` | My closest real-B0005 code reconstruction for sequential/parallel CNN-LSTM work | No saved execution output; split requires correction |
+| `archive/evidence/02_parallel_cnn_lstm_rmse_0_047.pdf` | Evidence for the strongest result | RMSE 0.047; R2 0.877 |
 
 ## Archived evidence and experiments
 

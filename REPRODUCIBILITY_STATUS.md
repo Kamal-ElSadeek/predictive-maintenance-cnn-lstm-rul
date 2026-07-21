@@ -22,7 +22,7 @@ Current status:
 
 - the best available executed notebook reports RMSE 6.7927, MAE 5.1498, and R2 0.9280 on test units 2, 4, and 8;
 - the closing batch preserves the completed 30-trial tuner stage and incomplete continuation stages;
-- no newly received notebook supersedes the 6.7927 result.
+- no other notebook supersedes the 6.7927 result.
 
 Clean-rerun blockers:
 
@@ -42,7 +42,7 @@ Current status:
 
 Clean-rerun blockers:
 
-- the received `B0005.mat` copy is unreadable;
+- my `B0005.mat` copy is unreadable;
 - the code reconstruction's split is nonchronological;
 - the original executed notebook for the 0.047 result is missing.
 
