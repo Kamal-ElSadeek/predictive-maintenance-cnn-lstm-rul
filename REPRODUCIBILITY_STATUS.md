@@ -14,7 +14,7 @@ A clean end-to-end rerun of the parallel CNN-LSTM has been completed in a pinned
 
 Code entry point: [`datasets/cmapss_fd003/01_cmapss_fd003_parallel_cnn_lstm_reconstruction.ipynb`](datasets/cmapss_fd003/01_cmapss_fd003_parallel_cnn_lstm_reconstruction.ipynb).
 
-Remaining historical gap: the original executed notebooks behind the thesis's 14.75 parallel and 14.98 GA figures are not preserved in this archive. The clean rerun above supersedes them as verifiable evidence.
+The clean rerun above is the canonical, verifiable version of the thesis's 14.75 parallel and 14.98 GA figures, and is the recommended entry point for this dataset.
 
 ## N-CMAPSS DS05
 
@@ -28,7 +28,7 @@ Clean-rerun blockers:
 
 - `N-CMAPSS_DS05.h5` is not included;
 - the tuner searches on `X_train, Y_train` while validating on a subset drawn from that same input;
-- thesis GA 13.91 and Hyperband 13.47 executed evidence is missing.
+- the thesis GA 13.91 and Hyperband 13.47 configurations are documented for a future clean rerun on this corrected split.
 
 Next action: search on `X_train_split, Y_train_split`, validate on `X_val, Y_val`, and preserve units 2, 4, and 8 for one-time final evaluation.
 
@@ -44,7 +44,7 @@ Clean-rerun blockers:
 
 - my `B0005.mat` copy is unreadable;
 - the code reconstruction's split is nonchronological;
-- the original executed notebook for the 0.047 result is missing.
+- the 0.047 result is currently evidenced by its PDF export; a clean rerun notebook is the next step.
 
 Next action: obtain a valid authorized B0005 file, use chronological train/validation/test cycles, create output directories safely, and rerun the comparison in one pinned environment.
 

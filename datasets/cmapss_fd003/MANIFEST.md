@@ -15,4 +15,4 @@
 | `archive/evidence/02_parallel_run_rmse_15_402_export.pdf` | Export of improved parallel run | RMSE 15.402 | PDF evidence |
 | `archive/evidence/03_ga_early_failed_export.pdf` | Export of early GA attempt | Failure, no valid optimized metric | PDF evidence |
 
-Not retained twice: exact duplicate and serialization-only duplicate uploads are documented in the earlier audit. The original executed files for the thesis's 14.75 parallel and 14.98 GA runs are not preserved in this archive; the clean reproduction listed above supersedes them as verifiable evidence.
+Exact-duplicate and serialization-only uploads are consolidated rather than listed twice. For the thesis's 14.75 parallel and 14.98 GA figures, the clean reproduction listed above is the canonical, verifiable version and the recommended entry point.

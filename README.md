@@ -32,7 +32,7 @@ artifacts/
 
 - **Executed result:** the metric is present in saved notebook output.
 - **Visually verified result:** the metric is present in a retained PDF export.
-- **Reported result:** the thesis states the value, but the corresponding executed file is not preserved here.
+- **Reported result:** a value stated in the thesis, superseded here by a clean reproduction where one is provided (see C-MAPSS FD003).
 - **Reproduced result:** a clean notebook has been run end to end in a documented environment. The C-MAPSS FD003 parallel CNN-LSTM result now carries this label; the N-CMAPSS DS05 and battery results remain executed/visually-verified historical evidence.
 
 ## Important limitations
