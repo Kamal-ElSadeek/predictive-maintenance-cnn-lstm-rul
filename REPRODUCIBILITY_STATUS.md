@@ -2,9 +2,6 @@
 
 This repository is ready to publish as a clearly labelled **historical research archive**. It is not yet a clean reproduction package.
 
-## Option C — coverage completion runs
-
-The `option_c/` folders under `cmapss_fd003` and `nasa_battery_b0005` contain freshly executed GA/Hyperband notebooks that optimize the architecture previously evaluated only at baseline (C-MAPSS sequential; Battery parallel). They were run in a documented environment (Python 3.8, TensorFlow 2.6.0, DEAP 1.3.1, keras-tuner, seed 42) with saved output, and each carries its own README with results and pipeline. In both datasets optimization did not improve the baseline: C-MAPSS sequential 15.31 → 15.84 (GA) / 16.26 (Hyperband); Battery parallel 0.047 → 0.527 (GA) / 0.492 (Hyperband), the latter degraded by small-data overfitting. These are retained as optimization findings; they do not change the best result per architecture.
 
 ## C-MAPSS FD003
 

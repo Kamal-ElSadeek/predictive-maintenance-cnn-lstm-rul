@@ -12,16 +12,6 @@ This repository preserves the code and result evidence available for Kamal M. El
 
 Follow each dataset's README before interpreting a metric. It explains exactly why the notebook was selected, what evidence supports it, and what methodological limitations remain.
 
-## Option C — coverage completion runs
-
-To complete the optimization coverage matrix, the one architecture per dataset that had previously been evaluated only at its baseline was optimized with the same two optimizers (GA and Hyperband) as the opposite architecture. These are freshly executed notebooks with saved output.
-
-| Dataset | Model optimized | Baseline | GA | Hyperband | Notebook |
-|---|---|---:|---:|---:|---|
-| C-MAPSS FD003 | sequential | 15.31 | 15.84 | 16.26 | [`datasets/cmapss_fd003/option_c/`](datasets/cmapss_fd003/option_c/) |
-| NASA Battery B0005 | parallel | 0.047 | 0.527 | 0.492 | [`datasets/nasa_battery_b0005/option_c/`](datasets/nasa_battery_b0005/option_c/) |
-
-In both cases optimization did not improve on the baseline, so the best result per architecture is unchanged and the parallel-over-sequential ordering holds under equal optimization. The Battery parallel runs degraded sharply because of overfitting on a very small training set; the 0.047 baseline remains the best parallel result. See each `option_c/README.md` for details.
 
 ## Repository layout
 
@@ -34,7 +24,6 @@ datasets/
     archive/
       notebooks/       alternative, incomplete, or superseded experiments
       evidence/        retained notebook-to-PDF result exports
-    option_c/          coverage-completion GA/Hyperband runs (where applicable)
     data/               acquisition or missing-data notes
 ```
 
