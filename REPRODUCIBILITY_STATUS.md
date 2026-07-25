@@ -1,20 +1,26 @@
 # Reproducibility Status
 
-This repository combines a clearly labelled **historical research archive** with clean reproductions where they have been completed. C-MAPSS FD003 is reproduced; N-CMAPSS DS05 and the battery dataset remain archive-status.
+This repository is ready to publish as a clearly labelled **historical research archive**. It is not yet a clean reproduction package.
 
-## C-MAPSS FD003 — REPRODUCED
+## Option C — coverage completion runs
 
-A clean end-to-end rerun of the parallel CNN-LSTM has been completed in a pinned environment (Python 3.8, TensorFlow 2.10.0, recorded in [`artifacts/cmapss_fd003/environment.json`](artifacts/cmapss_fd003/environment.json)):
+The `option_c/` folders under `cmapss_fd003` and `nasa_battery_b0005` contain freshly executed GA/Hyperband notebooks that optimize the architecture previously evaluated only at baseline (C-MAPSS sequential; Battery parallel). They were run in a documented environment (Python 3.8, TensorFlow 2.6.0, DEAP 1.3.1, keras-tuner, seed 42) with saved output, and each carries its own README with results and pipeline. In both datasets optimization did not improve the baseline: C-MAPSS sequential 15.31 → 15.84 (GA) / 16.26 (Hyperband); Battery parallel 0.047 → 0.527 (GA) / 0.492 (Hyperband), the latter degraded by small-data overfitting. These are retained as optimization findings; they do not change the best result per architecture.
 
-- engine-level split: 80 training units, 20 validation units, official test set held out for one-time evaluation;
-- sequence length 30, RUL cap 125, seed 42;
-- single-model test result: **RMSE 14.680; MAE 11.042; R2 0.874** — matching the thesis-reported 14.75 within 0.07 RMSE;
-- 5-seed ensemble (seeds 42, 7, 123, 2024, 31415), mean of predictions: **test RMSE 13.391; MAE 9.793; R2 0.895**;
-- full metrics for train, exhaustive-window validation, test-like validation, and test are in [`artifacts/cmapss_fd003/parallel_reconstruction/metrics.json`](artifacts/cmapss_fd003/parallel_reconstruction/metrics.json) and [`ensemble_metrics.json`](artifacts/cmapss_fd003/parallel_reconstruction/ensemble_metrics.json).
+## C-MAPSS FD003
 
-Code entry point: [`datasets/cmapss_fd003/01_cmapss_fd003_parallel_cnn_lstm_reconstruction.ipynb`](datasets/cmapss_fd003/01_cmapss_fd003_parallel_cnn_lstm_reconstruction.ipynb).
+Current status:
 
-The clean rerun above is the canonical, verifiable version of the thesis's 14.75 parallel and 14.98 GA figures, and is the recommended entry point for this dataset.
+- the current-PC inventory is complete;
+- the best available executed notebook reports RMSE 15.032 and R2 0.868;
+- the thesis's 14.75 parallel and 14.98 GA execution evidence is still missing.
+
+Clean-rerun blockers:
+
+- raw FD003 data is not included;
+- final environment, model weights, and tuner artifacts are missing;
+- the historical preprocessing and validation protocol needs explicit reconstruction.
+
+Next action: retrieve the university-PC items in `datasets/cmapss_fd003/CURRENT_PC_CHECKPOINT.md`, then rerun the selected architectures with documented engine-level splits.
 
 ## N-CMAPSS DS05
 
@@ -22,13 +28,13 @@ Current status:
 
 - the best available executed notebook reports RMSE 6.7927, MAE 5.1498, and R2 0.9280 on test units 2, 4, and 8;
 - the closing batch preserves the completed 30-trial tuner stage and incomplete continuation stages;
-- no other notebook supersedes the 6.7927 result.
+- no newly received notebook supersedes the 6.7927 result.
 
 Clean-rerun blockers:
 
 - `N-CMAPSS_DS05.h5` is not included;
 - the tuner searches on `X_train, Y_train` while validating on a subset drawn from that same input;
-- the thesis GA 13.91 and Hyperband 13.47 configurations are documented for a future clean rerun on this corrected split.
+- thesis GA 13.91 and Hyperband 13.47 executed evidence is missing.
 
 Next action: search on `X_train_split, Y_train_split`, validate on `X_val, Y_val`, and preserve units 2, 4, and 8 for one-time final evaluation.
 
@@ -42,9 +48,9 @@ Current status:
 
 Clean-rerun blockers:
 
-- my `B0005.mat` copy is unreadable;
+- the received `B0005.mat` copy is unreadable;
 - the code reconstruction's split is nonchronological;
-- the 0.047 result is currently evidenced by its PDF export; a clean rerun notebook is the next step.
+- the original executed notebook for the 0.047 result is missing.
 
 Next action: obtain a valid authorized B0005 file, use chronological train/validation/test cycles, create output directories safely, and rerun the comparison in one pinned environment.
 
