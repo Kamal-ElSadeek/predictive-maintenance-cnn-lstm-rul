@@ -1,0 +1,5 @@
+search,arch,protocol,trials,params,rmse_mean,rmse_std,rmse_Ah,best_seed,worst_seed,persistence,beats_persistence
+sequential_onestep,sequential,onestep,30,46649,0.00726,0.00038,0.0135,0.00685,0.00803,0.00689,no
+sequential_recursive,sequential,recursive,30,117625,0.0644,0.00743,0.1196,0.05304,0.07776,0.0991,yes
+parallel_onestep,parallel,onestep,30,179865,0.00712,0.0002,0.0132,0.00677,0.00737,0.00689,no
+parallel_recursive,parallel,recursive,30,72121,0.06836,0.01001,0.1269,0.0491,0.08468,0.0991,yes

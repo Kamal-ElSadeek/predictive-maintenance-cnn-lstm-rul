@@ -1,0 +1,16 @@
+,method,source,rmse
+1,CNN-BiLSTM-AM,Tian,0.00481
+2,CNN-BiLSTM,Tian,0.00595
+3,BiLSTM,Tian,0.0062
+4,1D CNN-BiLSTM,Gao,0.00772
+5,CNN,Tian,0.00863
+6,1D CNN,Gao,0.00866
+7,1D CNN-LSTM,Gao,0.00932
+8,"Ours round 1 (capacity only, tuned)",this work,0.01063
+9,   our best seed,this work,0.01557
+10,Ours round 2 (F0 + constrained BO),this work,0.01567
+11,1D CNN-RNN,Gao,0.01661
+12,RNN,Gao,0.01776
+13,BiLSTM,Gao,0.01986
+14,LSTM,Gao,0.02302
+15,   trivial floor,reference,0.02927

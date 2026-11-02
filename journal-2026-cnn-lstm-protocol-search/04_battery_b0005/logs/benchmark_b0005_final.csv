@@ -1,0 +1,17 @@
+,method,source,rmse
+1,CNN-BiLSTM-AM,Tian,0.00481
+2,CNN-BiLSTM,Tian,0.00595
+3,BiLSTM,Tian,0.0062
+4,1D CNN-BiLSTM,Gao,0.00772
+5,Ours: fade curve + network residual,this work,0.0085
+6,CNN,Tian,0.00863
+7,1D CNN,Gao,0.00866
+8,Ours: 25-seed ensemble,this work,0.0093
+9,1D CNN-LSTM,Gao,0.00932
+10,Ours: network alone (round 1),this work,0.01095
+11,   fade curve alone,reference,0.01439
+12,1D CNN-RNN,Gao,0.01661
+13,RNN,Gao,0.01776
+14,BiLSTM,Gao,0.01986
+15,LSTM,Gao,0.02302
+16,   flat-line baseline,reference,0.02927

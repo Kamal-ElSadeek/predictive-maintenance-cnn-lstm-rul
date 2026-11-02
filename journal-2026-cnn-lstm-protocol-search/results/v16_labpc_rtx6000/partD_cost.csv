@@ -1,0 +1,6 @@
+dataset,arch,params,flops
+DS05,par,162001,9595280
+DS05,seq,142784,2220292
+DS05,cnn,120113,7143952
+DS05,lstm,41905,2451344
+DS05,seq_matched,164665,2612092

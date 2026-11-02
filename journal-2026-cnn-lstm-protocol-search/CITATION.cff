@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this code or these logs, please cite the paper below."
+title: "Architecture, Protocol and Search in Hybrid CNN–LSTM Prognostics: code and run logs"
+authors:
+  - family-names: Mohamed
+    given-names: Kamal
+  - family-names: Habib
+    given-names: Maki K.
+repository-code: "https://github.com/Kamal-ElSadeek/predictive-maintenance-cnn-lstm-rul"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Architecture, Protocol and Search in Hybrid CNN–LSTM Prognostics: A Controlled, Reproducible Evaluation on C-MAPSS, N-CMAPSS and NASA Battery Data"
+  authors:
+    - family-names: Habib
+      given-names: Maki K.
+    - family-names: Mohamed
+      given-names: Kamal
+  status: submitted

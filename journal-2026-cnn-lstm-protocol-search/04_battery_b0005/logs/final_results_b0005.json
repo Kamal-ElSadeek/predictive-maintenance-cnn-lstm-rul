@@ -1,0 +1,225 @@
+{
+  "floor": 0.029273444786667824,
+  "protocols": [
+    {
+      "id": "P1",
+      "protocol": "recursive from cycle 134",
+      "kind": "forward forecast",
+      "mean": 0.010949699394404887,
+      "std": 0.0053621197910095186,
+      "best": 0.0072695729322731495,
+      "trivial": 0.029273444786667824,
+      "skill": 0.6259511145954448,
+      "n_test": 35
+    },
+    {
+      "id": "P2",
+      "protocol": "one-step-ahead from 134",
+      "kind": "forward, true previous",
+      "mean": 0.005690084677189589,
+      "std": 0.0004960971049398495,
+      "best": 0.005360888317227364,
+      "trivial": 0.005403381772339344,
+      "skill": -0.053059901544976196,
+      "n_test": 35
+    },
+    {
+      "id": "P3",
+      "protocol": "random 80/20 over all cycles",
+      "kind": "interpolation",
+      "mean": 0.008147914707660676,
+      "std": 0.00013184811957225802,
+      "best": 0.007989952340722084,
+      "trivial": 0.008089233189821243,
+      "skill": -0.00725427447353999,
+      "n_test": 32
+    },
+    {
+      "id": "P4",
+      "protocol": "every 5th cycle held out",
+      "kind": "interpolation",
+      "mean": 0.0078069671988487245,
+      "std": 0.000527455125141018,
+      "best": 0.007531463168561459,
+      "trivial": 0.007758659310638905,
+      "skill": -0.006226319042463846,
+      "n_test": 32
+    }
+  ],
+  "fade_form": "linear, last 20 cycles (pre-committed)",
+  "curve_rmse": 0.014390897937119007,
+  "fade_grid": [
+    {
+      "form": "linear",
+      "fit_window": "20",
+      "val_at_99": 0.0183,
+      "test_at_134": 0.01439
+    },
+    {
+      "form": "linear",
+      "fit_window": "30",
+      "val_at_99": 0.00646,
+      "test_at_134": 0.01911
+    },
+    {
+      "form": "linear",
+      "fit_window": "40",
+      "val_at_99": 0.01124,
+      "test_at_134": 0.02151
+    },
+    {
+      "form": "linear",
+      "fit_window": "60",
+      "val_at_99": 0.01875,
+      "test_at_134": 0.02252
+    },
+    {
+      "form": "linear",
+      "fit_window": "80",
+      "val_at_99": 0.01005,
+      "test_at_134": 0.03307
+    },
+    {
+      "form": "linear",
+      "fit_window": "None",
+      "val_at_99": 0.01636,
+      "test_at_134": 0.02105
+    },
+    {
+      "form": "quadratic",
+      "fit_window": "20",
+      "val_at_99": 0.08507,
+      "test_at_134": 0.088
+    },
+    {
+      "form": "quadratic",
+      "fit_window": "30",
+      "val_at_99": 0.03936,
+      "test_at_134": 0.00782
+    },
+    {
+      "form": "quadratic",
+      "fit_window": "40",
+      "val_at_99": 0.04952,
+      "test_at_134": 0.00609
+    },
+    {
+      "form": "quadratic",
+      "fit_window": "60",
+      "val_at_99": 0.00523,
+      "test_at_134": 0.02068
+    },
+    {
+      "form": "quadratic",
+      "fit_window": "80",
+      "val_at_99": 0.03205,
+      "test_at_134": 0.00625
+    },
+    {
+      "form": "quadratic",
+      "fit_window": "None",
+      "val_at_99": 0.05768,
+      "test_at_134": 0.05855
+    },
+    {
+      "form": "exp+offset",
+      "fit_window": "20",
+      "val_at_99": 0.01832,
+      "test_at_134": 0.01437
+    },
+    {
+      "form": "exp+offset",
+      "fit_window": "30",
+      "val_at_99": 0.03375,
+      "test_at_134": 0.00725
+    },
+    {
+      "form": "exp+offset",
+      "fit_window": "40",
+      "val_at_99": 0.03127,
+      "test_at_134": 0.00686
+    },
+    {
+      "form": "exp+offset",
+      "fit_window": "60",
+      "val_at_99": 0.00654,
+      "test_at_134": 0.02077
+    },
+    {
+      "form": "exp+offset",
+      "fit_window": "80",
+      "val_at_99": 0.01003,
+      "test_at_134": 0.00692
+    },
+    {
+      "form": "exp+offset",
+      "fit_window": "None",
+      "val_at_99": 0.01636,
+      "test_at_134": 0.02104
+    }
+  ],
+  "spearman": -0.07847187416418944,
+  "spearman_p": 0.7569380648699684,
+  "physics": [
+    0.007854774594306946,
+    0.01180181186646223,
+    0.007374241016805172,
+    0.00767058040946722,
+    0.007812061347067356
+  ],
+  "network_alone": 0.010949699394404887,
+  "ensemble": [
+    {
+      "size": 1,
+      "rmse": 0.008958477526903152
+    },
+    {
+      "size": 3,
+      "rmse": 0.008090274408459663
+    },
+    {
+      "size": 5,
+      "rmse": 0.008673270232975483
+    },
+    {
+      "size": 10,
+      "rmse": 0.009091179817914963
+    },
+    {
+      "size": 15,
+      "rmse": 0.009116891771554947
+    },
+    {
+      "size": 25,
+      "rmse": 0.009302960708737373
+    }
+  ],
+  "singles": [
+    0.00896,
+    0.00816,
+    0.00788,
+    0.00807,
+    0.01216,
+    0.01275,
+    0.0082,
+    0.0075,
+    0.01093,
+    0.011,
+    0.00966,
+    0.01105,
+    0.00992,
+    0.00803,
+    0.00875,
+    0.00904,
+    0.00746,
+    0.01505,
+    0.00806,
+    0.01257,
+    0.01095,
+    0.009,
+    0.00849,
+    0.01026,
+    0.0113
+  ],
+  "final": 0.009302960708737373
+}

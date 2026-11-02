@@ -1,0 +1,8 @@
+{
+  "l2": 0.3,
+  "chosen": {
+    "par": 0.3,
+    "seq": 0.03
+  },
+  "rule": "lowest mean validation RMSE over 6 seeds"
+}

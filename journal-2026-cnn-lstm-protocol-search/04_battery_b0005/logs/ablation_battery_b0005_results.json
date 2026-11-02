@@ -1,0 +1,92 @@
+{
+  "dataset": "NASA Battery B0005",
+  "published_baseline_rmse": 0.0253,
+  "ablation": [
+    {
+      "rmse": 0.406286358833313,
+      "mae": 0.34132879972457886,
+      "r2": -30.071429740987323,
+      "seeds": 1,
+      "per_seed": [
+        0.4063
+      ],
+      "params": 44065,
+      "id": "A0",
+      "config": "Baseline (capacity only)",
+      "variant": "base"
+    },
+    {
+      "rmse": 0.5158852934837341,
+      "mae": 0.4951234459877014,
+      "r2": -49.09599924033361,
+      "seeds": 1,
+      "per_seed": [
+        0.5159
+      ],
+      "params": 47649,
+      "id": "A1",
+      "config": "+ health indicators",
+      "variant": "full"
+    },
+    {
+      "rmse": 0.7267722487449646,
+      "mae": 0.6844821572303772,
+      "r2": -98.42450478766324,
+      "seeds": 1,
+      "per_seed": [
+        0.7268
+      ],
+      "params": 74785,
+      "id": "A2",
+      "config": "+ bidirectional",
+      "variant": "full"
+    },
+    {
+      "rmse": 0.49982112646102905,
+      "mae": 0.470061331987381,
+      "r2": -46.02468973975248,
+      "seeds": 1,
+      "per_seed": [
+        0.4998
+      ],
+      "params": 74914,
+      "id": "A3",
+      "config": "+ attention pooling",
+      "variant": "full"
+    },
+    {
+      "rmse": 0.7566576600074768,
+      "mae": 0.7141731977462769,
+      "r2": -106.76942144877827,
+      "seeds": 1,
+      "per_seed": [
+        0.7567
+      ],
+      "params": 94242,
+      "id": "A4",
+      "config": "+ multi-scale CNN",
+      "variant": "full"
+    },
+    {
+      "rmse": 0.4716159999370575,
+      "mae": 0.4501093029975891,
+      "r2": -40.86718945952659,
+      "seeds": 5,
+      "per_seed": [
+        0.5106,
+        0.389,
+        0.43,
+        0.5075,
+        0.5232
+      ],
+      "params": 94242,
+      "id": "A5",
+      "config": "+ ensemble",
+      "variant": "full"
+    }
+  ],
+  "best": {
+    "id": "A0",
+    "rmse": 0.406286358833313
+  }
+}

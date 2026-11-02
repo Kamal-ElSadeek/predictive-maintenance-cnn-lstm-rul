@@ -1,0 +1,182 @@
+Input Notebook:  Review_Experiments_v16_PC2.ipynb
+Output Notebook: runs\executed_pc2_a1.ipynb
+Executing notebook with kernel: v16pc2
+Executing Cell 1---------------------------------------
+Ending Cell 1------------------------------------------
+Executing Cell 2---------------------------------------
+parts to run: FGIJK
+results -> C:\Users\Pc\Documents\AUC\AUC Data transfer\results_v16_pc2 | DRY_RUN False
+NCMAPSS_DIR  -> C:\Users\Pc\Documents\AUC\AUC Data transfer
+CMAPSS_DIR   -> C:\Users\Pc\Documents\AUC\AUC Data transfer
+BATTERY_DIR  -> C:\Users\Pc\Documents\AUC\AUC Data transfer
+V12_DIR      -> C:\Users\Pc\Documents\AUC\thesiswork\N-Cmapps
+
+Ending Cell 2------------------------------------------
+Executing Cell 3---------------------------------------
+Ending Cell 3------------------------------------------
+Executing Cell 4---------------------------------------
+{
+ "time": "2026-10-31 16:38:03",
+ "python": "3.8.18",
+ "platform": "Windows-10-10.0.26200-SP0",
+ "numpy": "1.23.5",
+ "pandas": "1.5.3",
+ "device": "/GPU:0",
+ "determinism": true,
+ "sklearn": "0.24.2",
+ "scipy": "1.9.3",
+ "tensorflow": "2.10.0",
+ "cuda": "64_112",
+ "cudnn": "64_8",
+ "gpu": [
+  "NVIDIA GeForce RTX 3090"
+ ],
+ "nvidia_smi": "NVIDIA GeForce RTX 3090, 24576 MiB, 610.88"
+}
+store: 354 runs already on disk (results_v16_pc2\runs.jsonl)
+
+Ending Cell 4------------------------------------------
+Executing Cell 5---------------------------------------
+Ending Cell 5------------------------------------------
+Executing Cell 6---------------------------------------
+Ending Cell 6------------------------------------------
+Executing Cell 7---------------------------------------
+Ending Cell 7------------------------------------------
+Executing Cell 8---------------------------------------
+Ending Cell 8------------------------------------------
+Executing Cell 9---------------------------------------
+Ending Cell 9------------------------------------------
+Executing Cell 10--------------------------------------
+Ending Cell 10-----------------------------------------
+Executing Cell 11--------------------------------------
+Ending Cell 11-----------------------------------------
+Executing Cell 12--------------------------------------
+confirm seeds [5042, 5043, 5044, 5045, 5046, 5047, 5048, 5049, 5050, 5051]
+
+Ending Cell 12-----------------------------------------
+Executing Cell 13--------------------------------------
+Ending Cell 13-----------------------------------------
+Executing Cell 14--------------------------------------
+Ending Cell 14-----------------------------------------
+Executing Cell 15--------------------------------------
+Ending Cell 15-----------------------------------------
+Executing Cell 16--------------------------------------
+power check: s_d 0.24, delta 0.3 -> 7 seeds
+
+Ending Cell 16-----------------------------------------
+Executing Cell 17--------------------------------------
+Ending Cell 17-----------------------------------------
+Executing Cell 18--------------------------------------
+Ending Cell 18-----------------------------------------
+Executing Cell 19--------------------------------------
+Ending Cell 19-----------------------------------------
+Executing Cell 20--------------------------------------
+Ending Cell 20-----------------------------------------
+Executing Cell 21--------------------------------------
+Ending Cell 21-----------------------------------------
+Executing Cell 22--------------------------------------
+Ending Cell 22-----------------------------------------
+Executing Cell 23--------------------------------------
+Ending Cell 23-----------------------------------------
+Executing Cell 24--------------------------------------
+Ending Cell 24-----------------------------------------
+Executing Cell 25--------------------------------------
+Ending Cell 25-----------------------------------------
+Executing Cell 26--------------------------------------
+Ending Cell 26-----------------------------------------
+Executing Cell 27--------------------------------------
+Ending Cell 27-----------------------------------------
+Executing Cell 28--------------------------------------
+            factor   diff  ci_lo  ci_hi     p  p_holm
+dropout_dense=0.15 -0.631 -2.415  1.152 0.342   1.000
+dropout_dense=0.00 -1.265 -2.607  0.076 0.058   0.288
+    activation=elu -1.263 -2.649  0.123 0.063   0.288
+   activation=gelu  0.257 -2.020  2.534 0.743   1.000
+              T=20  0.301 -1.124  1.726 0.550   1.000
+
+Ending Cell 28-----------------------------------------
+Executing Cell 29--------------------------------------
+Ending Cell 29-----------------------------------------
+Executing Cell 30--------------------------------------
+                                     mean       std  count
+cell  cond           arch mode                            
+B0005 loco_pooled    par  trend  0.012761  0.002303     10
+      loco_zero_shot par  trend  0.015574  0.006176     10
+      main           cnn  trend  0.009274  0.002034     30
+                     lstm trend  0.010503  0.001289     30
+                     par  net    0.015252  0.013679     30
+                          trend  0.008923  0.001736     30
+                     seq  net    0.009193  0.002957     30
+                          trend  0.008186  0.001232     30
+      within         par  trend  0.009575  0.002579     10
+B0006 loco_pooled    par  trend  0.014398  0.005591     10
+      loco_zero_shot par  trend  0.021240  0.008167     10
+      within         par  trend  0.013243  0.000428     10
+B0007 loco_pooled    par  trend  0.007076  0.000713     10
+      loco_zero_shot par  trend  0.009050  0.003326     10
+      within         par  trend  0.007748  0.000623     10
+B0018 loco_pooled    par  trend  0.046189  0.002948     10
+      loco_zero_shot par  trend  0.048309  0.010738     10
+      within         par  trend  0.051518  0.001751     10
+
+Ending Cell 30-----------------------------------------
+Executing Cell 31--------------------------------------
+Ending Cell 31-----------------------------------------
+Executing Cell 32--------------------------------------
+              mean       std
+channels                    
+w_xs      5.432909  0.348388
+xs        6.236753  0.470160
+xs_xv     4.908189  0.070997
+
+Ending Cell 32-----------------------------------------
+Executing Cell 33--------------------------------------
+Ending Cell 33-----------------------------------------
+Executing Cell 34--------------------------------------
+2026-10-31 16:38:05.024765: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-10-31 16:38:05.402117: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1616] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 21680 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3090, pci bus id: 0000:01:00.0, compute capability: 8.6
+DS02 T=30 xs_xv: train 63131 val 29204 test 19270 windows
+
+2026-10-31 16:38:06.953658: I tensorflow/stream_executor/cuda/cuda_dnn.cc:384] Loaded cuDNN version 8100
+                   mean       std
+dataset arch                     
+DS02    par    4.206544  0.188763
+        seq    4.346953  0.433657
+FD001   par   12.376573  0.207008
+        seq   12.144375  0.364493
+FD002   par   12.985540  0.419486
+        seq   13.227481  0.818412
+FD004   par   13.268613  0.481098
+        seq   14.138422  1.442370
+
+Ending Cell 34-----------------------------------------
+Executing Cell 35--------------------------------------
+Ending Cell 35-----------------------------------------
+Executing Cell 36--------------------------------------
+DS05 T=30 xs_xv: train 49133 val 23641 test 41758 windows
+
+FD003: train 16092 val 3728 test 100 | trivial 41.021
+
+                          test          nasa
+dataset arch                                
+DS05    bilstm        5.394593  22253.461914
+        gru           5.407291  22032.153320
+        par_mc        5.045161  20832.989909
+        tcn           4.610572  18327.157227
+        transformer   6.943784  49356.554688
+FD003   bilstm       11.708246    245.943151
+        gru          11.268655    220.434570
+        par_mc       10.974940    266.937475
+        tcn          12.223394    274.388316
+        transformer  13.060362    351.802945
+
+Ending Cell 36-----------------------------------------
+Executing Cell 37--------------------------------------
+Ending Cell 37-----------------------------------------
+Executing Cell 38--------------------------------------
+Ending Cell 38-----------------------------------------
+Executing Cell 39--------------------------------------
+Ending Cell 39-----------------------------------------
+Executing Cell 40--------------------------------------
+Ending Cell 40-----------------------------------------

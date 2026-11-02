@@ -1,0 +1,123 @@
+{
+  "final_name": "pso_2",
+  "adopt": true,
+  "final_kw": {
+    "T": "20",
+    "n_conv": "2",
+    "f1": "153",
+    "f_growth": "0.9375",
+    "kernel": "5",
+    "dilation": "1",
+    "use_pool": "0",
+    "readout": "avg",
+    "n_lstm": "1",
+    "lstm_units": "59",
+    "bidir": "0",
+    "fusion": "conv",
+    "fuse_filters": "48",
+    "dropout_conv": "0.2192517771420791",
+    "dropout_dense": "0.2977039330152754",
+    "l2reg": "3.7781851924162837e-05",
+    "weight_decay": "3.1622776601683734e-07",
+    "dense1": "72",
+    "dense2": "0",
+    "activation": "relu",
+    "optimizer": "adam",
+    "lr": "0.0013295739742362476",
+    "lr_sched": "plateau",
+    "loss": "mse",
+    "huber_delta": "15.178145374187189",
+    "scaler": "minmax",
+    "batch": "256",
+    "use_lstm": "1"
+  },
+  "confirmed": [],
+  "spearman": 0.9067895545314898,
+  "ablation_incumbent": [
+    {
+      "base": "incumbent",
+      "variant": "full hybrid",
+      "val": 5.3015923500061035,
+      "capped": 6.156179618835449,
+      "capped_sd": 0.7155807398423961,
+      "raw": 11.549222564697265,
+      "params": 162001
+    },
+    {
+      "base": "incumbent",
+      "variant": "LSTM only",
+      "val": 10.783726787567138,
+      "capped": 10.974650573730468,
+      "capped_sd": 5.374514869964398,
+      "raw": 16.037232208251954,
+      "params": 41905
+    },
+    {
+      "base": "incumbent",
+      "variant": "CNN only",
+      "val": 4.263147497177124,
+      "capped": 5.480413436889648,
+      "capped_sd": 0.2143742987954923,
+      "raw": 10.935967445373535,
+      "params": 120113
+    },
+    {
+      "base": "incumbent",
+      "variant": "no dense head",
+      "val": 3.86969633102417,
+      "capped": 4.963496398925781,
+      "capped_sd": 0.33310713509753387,
+      "raw": 9.8378173828125,
+      "params": 160697
+    }
+  ],
+  "ablation_final": [
+    {
+      "base": "final",
+      "variant": "full hybrid",
+      "val": 4.117193698883057,
+      "capped": 4.911549377441406,
+      "capped_sd": 0.271431731086795,
+      "raw": 10.064564323425293,
+      "params": 184616
+    },
+    {
+      "base": "final",
+      "variant": "LSTM only",
+      "val": 4.317416477203369,
+      "capped": 5.102006435394287,
+      "capped_sd": 0.23602898213536888,
+      "raw": 10.28065891265869,
+      "params": 32913
+    },
+    {
+      "base": "final",
+      "variant": "CNN only",
+      "val": 3.8841259479522705,
+      "capped": 4.6483314514160154,
+      "capped_sd": 0.09800118439584142,
+      "raw": 9.849712944030761,
+      "params": 155352
+    },
+    {
+      "base": "final",
+      "variant": "no dense head",
+      "val": 3.8460846900939942,
+      "capped": 4.809197998046875,
+      "capped_sd": 0.4495521720127587,
+      "raw": 9.99305477142334,
+      "params": 181064
+    }
+  ],
+  "uncapped": {
+    "sub": 10,
+    "T": 20,
+    "epochs": 17,
+    "raw_mean": 8.158060359954835,
+    "raw_sd": 0.7744457914111381,
+    "capped_mean": 5.450188446044922,
+    "trivial_raw": 23.337932586669922
+  },
+  "trivial_capped": 18.393274307250977,
+  "trivial_raw": 23.14152717590332
+}

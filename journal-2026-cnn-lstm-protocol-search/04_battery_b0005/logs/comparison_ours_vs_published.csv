@@ -1,0 +1,32 @@
+,method,source,rmse
+1,CNN-BiLSTM-AM,Tian 2022,0.00481
+2,CNN-BiLSTM,Tian 2022,0.00595
+3,BiLSTM,Tian 2022,0.0062
+4,1D CNN-BiLSTM,Gao 2023,0.00772
+5,A0 Baseline (capacity only),"ours (split 50, delta)",0.00774
+6,CNN,Tian 2022,0.00863
+7,1D CNN,Gao 2023,0.00866
+8,1D CNN-LSTM,Gao 2023,0.00932
+9,A5 + ensemble,"ours (split 50, delta)",0.0101
+10,A4 + multi-scale CNN,ours (split 80),0.0106
+11,A2 + bidirectional,ours (split 80),0.01635
+12,1D CNN-RNN,Gao 2023,0.01661
+13,RNN,Gao 2023,0.01776
+14,A0 Baseline (capacity only),ours (split 80),0.01869
+15,A1 + health indicators,"ours (split 50, delta)",0.0194
+16,BiLSTM,Gao 2023,0.01986
+17,A4 + multi-scale CNN,"ours (split 50, delta)",0.02114
+18,LSTM,Gao 2023,0.02302
+19,Parallel CNN-LSTM (0.047 Ah),ours PUBLISHED,0.02532
+20,A3 + attention pooling,"ours (split 50, delta)",0.04425
+21,A2 + bidirectional,"ours (split 50, delta)",0.05011
+22,Sequential+Hyperband (0.094 Ah),ours PUBLISHED,0.05063
+23,A5 + ensemble,ours (split 80),0.05079
+24,A0 Baseline (capacity only),"ours (split 50, level)",0.07302
+25,A3 + attention pooling,ours (split 80),0.07655
+26,A1 + health indicators,ours (split 80),0.0935
+27,A1 + health indicators,"ours (split 50, level)",0.09423
+28,A2 + bidirectional,"ours (split 50, level)",0.09859
+29,A5 + ensemble,"ours (split 50, level)",0.10256
+30,A4 + multi-scale CNN,"ours (split 50, level)",0.1038
+31,A3 + attention pooling,"ours (split 50, level)",0.167

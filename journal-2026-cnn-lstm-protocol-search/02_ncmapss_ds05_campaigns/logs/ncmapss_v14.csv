@@ -1,0 +1,111 @@
+tag,seed,capped
+B ordered  hybrid,2042,4.945131778717041
+B ordered  hybrid,2043,5.038366794586182
+B ordered  hybrid,2044,5.002801895141602
+B ordered  hybrid,2045,4.921915531158447
+B ordered  hybrid,2046,5.133259296417236
+B ordered  hybrid,2047,4.829580783843994
+B ordered  hybrid,2048,4.846767902374268
+B ordered  hybrid,2049,5.298393726348877
+B ordered  hybrid,2050,4.775841236114502
+B ordered  hybrid,2051,5.0567240715026855
+B shuffled hybrid,2042,5.084616661071777
+B shuffled hybrid,2043,5.074098587036133
+B shuffled hybrid,2044,5.4082231521606445
+B shuffled hybrid,2045,4.979565143585205
+B shuffled hybrid,2046,5.645946502685547
+B shuffled hybrid,2047,4.966768264770508
+B shuffled hybrid,2048,5.361673355102539
+B shuffled hybrid,2049,5.121066093444824
+B shuffled hybrid,2050,4.766064643859863
+B shuffled hybrid,2051,5.435305118560791
+C1 conv fusion + average pool (as selected),2042,4.945131778717041
+C1 conv fusion + average pool (as selected),2043,5.038366794586182
+C1 conv fusion + average pool (as selected),2044,5.002801895141602
+C1 conv fusion + average pool (as selected),2045,4.921915531158447
+C1 conv fusion + average pool (as selected),2046,5.133259296417236
+C1 conv fusion + average pool (as selected),2047,4.829580783843994
+C1 conv fusion + average pool (as selected),2048,4.846767902374268
+C1 conv fusion + average pool (as selected),2049,5.298393726348877
+C1 conv fusion + average pool (as selected),2050,4.775841236114502
+C1 conv fusion + average pool (as selected),2051,5.0567240715026855
+C2 conv fusion + last timestep,2042,4.951962947845459
+C2 conv fusion + last timestep,2043,5.387445449829102
+C2 conv fusion + last timestep,2044,5.204745292663574
+C2 conv fusion + last timestep,2045,5.162872314453125
+C2 conv fusion + last timestep,2046,5.187236785888672
+C2 conv fusion + last timestep,2047,4.854084491729736
+C2 conv fusion + last timestep,2048,5.836294174194336
+C2 conv fusion + last timestep,2049,4.931183815002441
+C2 conv fusion + last timestep,2050,5.165962219238281
+C2 conv fusion + last timestep,2051,4.75181245803833
+C3 conv fusion + attention pool,2042,4.72237491607666
+C3 conv fusion + attention pool,2043,5.112823486328125
+C3 conv fusion + attention pool,2044,4.766374588012695
+C3 conv fusion + attention pool,2045,4.654064178466797
+C3 conv fusion + attention pool,2046,5.3597092628479
+C3 conv fusion + attention pool,2047,5.4069695472717285
+C3 conv fusion + attention pool,2048,4.951291561126709
+C3 conv fusion + attention pool,2049,5.377547264099121
+C3 conv fusion + attention pool,2050,4.845198631286621
+C3 conv fusion + attention pool,2051,5.080799102783203
+"C4 concat fusion, LSTM last state",2042,4.978956699371338
+"C4 concat fusion, LSTM last state",2043,5.230566024780273
+"C4 concat fusion, LSTM last state",2044,4.8286638259887695
+"C4 concat fusion, LSTM last state",2045,5.0623908042907715
+"C4 concat fusion, LSTM last state",2046,4.794902801513672
+"C4 concat fusion, LSTM last state",2047,5.513956069946289
+"C4 concat fusion, LSTM last state",2048,4.971086502075195
+"C4 concat fusion, LSTM last state",2049,4.954560279846191
+"C4 concat fusion, LSTM last state",2050,4.724299907684326
+"C4 concat fusion, LSTM last state",2051,5.034965515136719
+"C5 concat fusion, LSTM only",2042,5.1106953620910645
+"C5 concat fusion, LSTM only",2043,5.57459831237793
+"C5 concat fusion, LSTM only",2044,6.23922872543335
+"C5 concat fusion, LSTM only",2045,5.138982772827148
+"C5 concat fusion, LSTM only",2046,5.179732322692871
+"C5 concat fusion, LSTM only",2047,5.324342250823975
+"C5 concat fusion, LSTM only",2048,6.125644683837891
+"C5 concat fusion, LSTM only",2049,4.696506023406982
+"C5 concat fusion, LSTM only",2050,5.141018390655518
+"C5 concat fusion, LSTM only",2051,5.0590434074401855
+"C6 conv fusion, CNN only",2042,5.1335320472717285
+"C6 conv fusion, CNN only",2043,5.179553031921387
+"C6 conv fusion, CNN only",2044,4.723889350891113
+"C6 conv fusion, CNN only",2045,5.001375198364258
+"C6 conv fusion, CNN only",2046,4.751545429229736
+"C6 conv fusion, CNN only",2047,4.790368556976318
+"C6 conv fusion, CNN only",2048,4.854833126068115
+"C6 conv fusion, CNN only",2049,5.208162784576416
+"C6 conv fusion, CNN only",2050,4.828611373901367
+"C6 conv fusion, CNN only",2051,4.978553771972656
+"D1 hybrid, LSTM last state",2042,18.27452850341797
+"D1 hybrid, LSTM last state",2043,18.437034606933594
+"D1 hybrid, LSTM last state",2044,18.355318069458008
+"D1 hybrid, LSTM last state",2045,18.43768310546875
+"D1 hybrid, LSTM last state",2046,18.46369171142578
+"D1 hybrid, LSTM last state",2047,18.272483825683594
+"D1 hybrid, LSTM last state",2048,18.606523513793945
+"D1 hybrid, LSTM last state",2049,18.572175979614258
+"D1 hybrid, LSTM last state",2050,18.16559600830078
+"D1 hybrid, LSTM last state",2051,18.518798828125
+D2 LSTM only,2042,18.208162307739258
+D2 LSTM only,2043,18.20825958251953
+D2 LSTM only,2044,18.208507537841797
+D2 LSTM only,2045,18.2081356048584
+D2 LSTM only,2046,18.208209991455078
+D2 LSTM only,2047,18.21086883544922
+D2 LSTM only,2048,18.211069107055664
+D2 LSTM only,2049,18.222213745117188
+D2 LSTM only,2050,18.208616256713867
+D2 LSTM only,2051,18.209922790527344
+D3 CNN only,2042,18.31535530090332
+D3 CNN only,2043,18.347166061401367
+D3 CNN only,2044,18.360767364501953
+D3 CNN only,2045,18.423551559448242
+D3 CNN only,2046,18.633935928344727
+D3 CNN only,2047,17.969192504882812
+D3 CNN only,2048,18.475677490234375
+D3 CNN only,2049,18.437788009643555
+D3 CNN only,2050,18.26134490966797
+D3 CNN only,2051,18.44826889038086

@@ -1,0 +1,266 @@
+{
+  "dataset": "NASA Battery B0005",
+  "published_baseline_rmse": 0.0253,
+  "C0_Ah": 1.8564874208181574,
+  "window": 10,
+  "split_cycle": 50,
+  "persistence_rmse_soh": 0.006885958346901245,
+  "train_mean_rmse_soh": 0.19331964331924315,
+  "ablation_level": [
+    {
+      "rmse": 0.07301614433526993,
+      "mae": 0.06812797486782074,
+      "r2": -0.003539561982334849,
+      "seeds": 1,
+      "per_seed": [
+        0.073
+      ],
+      "params": 3089,
+      "id": "A0",
+      "config": "Baseline (capacity only)",
+      "variant": "base"
+    },
+    {
+      "rmse": 0.09423215687274933,
+      "mae": 0.08793241530656815,
+      "r2": -0.6714560352226595,
+      "seeds": 1,
+      "per_seed": [
+        0.0942
+      ],
+      "params": 3985,
+      "id": "A1",
+      "config": "+ health indicators",
+      "variant": "full"
+    },
+    {
+      "rmse": 0.09858535975217819,
+      "mae": 0.09262587130069733,
+      "r2": -0.8294543839362476,
+      "seeds": 1,
+      "per_seed": [
+        0.0986
+      ],
+      "params": 6161,
+      "id": "A2",
+      "config": "+ bidirectional",
+      "variant": "full"
+    },
+    {
+      "rmse": 0.16699989140033722,
+      "mae": 0.1519932895898819,
+      "r2": -4.249634935021885,
+      "seeds": 1,
+      "per_seed": [
+        0.167
+      ],
+      "params": 6194,
+      "id": "A3",
+      "config": "+ attention pooling",
+      "variant": "full"
+    },
+    {
+      "rmse": 0.10380228608846664,
+      "mae": 0.0975276380777359,
+      "r2": -1.028199111011964,
+      "seeds": 1,
+      "per_seed": [
+        0.1038
+      ],
+      "params": 9490,
+      "id": "A4",
+      "config": "+ multi-scale CNN",
+      "variant": "full"
+    },
+    {
+      "rmse": 0.10256356000900269,
+      "mae": 0.09337545186281204,
+      "r2": -0.9800808845959088,
+      "seeds": 5,
+      "per_seed": [
+        0.0661,
+        0.1341,
+        0.0272,
+        0.1956,
+        0.0913
+      ],
+      "params": 9490,
+      "id": "A5",
+      "config": "+ ensemble",
+      "variant": "full"
+    }
+  ],
+  "ablation_delta": [
+    {
+      "rmse": 0.007740741595625877,
+      "mae": 0.006055742967873812,
+      "r2": 0.9887212277006585,
+      "seeds": 1,
+      "per_seed": [
+        0.0077
+      ],
+      "params": 3089,
+      "id": "A0",
+      "config": "Baseline (capacity only)",
+      "variant": "base"
+    },
+    {
+      "rmse": 0.01939847320318222,
+      "mae": 0.016504669561982155,
+      "r2": 0.9291676169225132,
+      "seeds": 1,
+      "per_seed": [
+        0.0194
+      ],
+      "params": 3985,
+      "id": "A1",
+      "config": "+ health indicators",
+      "variant": "full"
+    },
+    {
+      "rmse": 0.05011051893234253,
+      "mae": 0.04488961398601532,
+      "r2": 0.5273337891291651,
+      "seeds": 1,
+      "per_seed": [
+        0.0501
+      ],
+      "params": 6161,
+      "id": "A2",
+      "config": "+ bidirectional",
+      "variant": "full"
+    },
+    {
+      "rmse": 0.04425150528550148,
+      "mae": 0.03984668105840683,
+      "r2": 0.6314021339098943,
+      "seeds": 1,
+      "per_seed": [
+        0.0443
+      ],
+      "params": 6194,
+      "id": "A3",
+      "config": "+ attention pooling",
+      "variant": "full"
+    },
+    {
+      "rmse": 0.021140482276678085,
+      "mae": 0.02023128978908062,
+      "r2": 0.9158747312452302,
+      "seeds": 1,
+      "per_seed": [
+        0.0211
+      ],
+      "params": 9490,
+      "id": "A4",
+      "config": "+ multi-scale CNN",
+      "variant": "full"
+    },
+    {
+      "rmse": 0.010101480409502983,
+      "mae": 0.008360014297068119,
+      "r2": 0.9807926791410985,
+      "seeds": 5,
+      "per_seed": [
+        0.0086,
+        0.0173,
+        0.0421,
+        0.0071,
+        0.019
+      ],
+      "params": 9490,
+      "id": "A5",
+      "config": "+ ensemble",
+      "variant": "full"
+    }
+  ],
+  "ablation_split80": [
+    {
+      "rmse": 0.01869133487343788,
+      "mae": 0.016399508342146873,
+      "r2": 0.8361372602224337,
+      "seeds": 1,
+      "per_seed": [
+        0.0187
+      ],
+      "params": 3089,
+      "id": "A0",
+      "config": "Baseline (capacity only)",
+      "variant": "base"
+    },
+    {
+      "rmse": 0.09349679201841354,
+      "mae": 0.08631224185228348,
+      "r2": -3.1000858612667033,
+      "seeds": 1,
+      "per_seed": [
+        0.0935
+      ],
+      "params": 3985,
+      "id": "A1",
+      "config": "+ health indicators",
+      "variant": "full"
+    },
+    {
+      "rmse": 0.016350485384464264,
+      "mae": 0.01433489192277193,
+      "r2": 0.8746105777601367,
+      "seeds": 1,
+      "per_seed": [
+        0.0164
+      ],
+      "params": 6161,
+      "id": "A2",
+      "config": "+ bidirectional",
+      "variant": "full"
+    },
+    {
+      "rmse": 0.07655374705791473,
+      "mae": 0.07147092372179031,
+      "r2": -1.7487328044179615,
+      "seeds": 1,
+      "per_seed": [
+        0.0766
+      ],
+      "params": 6194,
+      "id": "A3",
+      "config": "+ attention pooling",
+      "variant": "full"
+    },
+    {
+      "rmse": 0.01060421671718359,
+      "mae": 0.007152786944061518,
+      "r2": 0.947257977404404,
+      "seeds": 1,
+      "per_seed": [
+        0.0106
+      ],
+      "params": 9490,
+      "id": "A4",
+      "config": "+ multi-scale CNN",
+      "variant": "full"
+    },
+    {
+      "rmse": 0.05079379305243492,
+      "mae": 0.04726612940430641,
+      "r2": -0.21009890683675736,
+      "seeds": 5,
+      "per_seed": [
+        0.1106,
+        0.0116,
+        0.0173,
+        0.0265,
+        0.0953
+      ],
+      "params": 9490,
+      "id": "A5",
+      "config": "+ ensemble",
+      "variant": "full"
+    }
+  ],
+  "best": {
+    "id": "A0",
+    "rmse_soh": 0.07301614433526993,
+    "rmse_Ah": 0.1355535534750716
+  }
+}
