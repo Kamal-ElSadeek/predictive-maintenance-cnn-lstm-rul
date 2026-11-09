@@ -16,7 +16,7 @@ for x,h in zip(cols,hdr): ax.text(x,27,h,fontsize=fs,fontweight='bold',va='cente
 rows=[['DS05, parallel','W = 30, C = 28','2 blocks: 192, 96; k = 5; p = 0','global avg pool','1 × 88','none','8','162,001'],
       ['DS05, sequential','W = 30, C = 28','4 blocks: 120, 63, 34, 18; k = 2; p = 2','—','1 × 128','—','201, 69','142,784'],
       ['FD003, parallel','W = 50, C = 25','1 block: 128; k = 3; p = 1','flatten','2 × 128','128 | 128','256','712,449'],
-      ['FD003, sequential','W = 50, C = 25','1 block: 128; k = 3; p = 1','—','2 × 128','—','128, 256','—'],
+      ['FD003, sequential','W = 50, C = 25','1 block: 128; k = 3; p = 1','—','2 × 128','—','128, 256','322,689'],
       ['B0005, parallel','W = 10, C = 1','1 block: 3 × 32 (k = 3, 5, 7); p = 1','global avg pool','1 × 32, bidir.','none','64','19,649'],
       ['B0005, sequential','W = 10, C = 1','1 block: 3 × 32 (k = 3, 5, 7); p = 1','—','1 × 32, bidir.','—','64','37,825']]
 for i,r in enumerate(rows):

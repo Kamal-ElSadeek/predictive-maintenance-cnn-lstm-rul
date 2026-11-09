@@ -6546,7 +6546,7 @@ z
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-02T11:06:02.632435</dc:date>
+    <dc:date>2026-11-09T18:48:12.894852</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -6572,7 +6572,7 @@ z
    <g id="pc_line2d_1">
     <path d="M 4 2 
 L 514.4 2 
-" clip-path="url(#pc_p303c66a600)" style="fill: none; stroke: #9e9e9e; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#pc_pb94111aff4)" style="fill: none; stroke: #9e9e9e; stroke-width: 0.6; stroke-linecap: square"/>
    </g>
    <g id="pc_text_1">
     <!-- (c) Selected configurations (Tables II and XIII) -->
@@ -9407,9 +9407,15 @@ z
     </g>
    </g>
    <g id="pc_text_41">
-    <!-- — -->
+    <!-- 322,689 -->
     <g transform="translate(470 75.187094) scale(0.066 -0.066)">
-     <use xlink:href="#pc_LiberationSerif-2014"/>
+     <use xlink:href="#pc_LiberationSerif-33"/>
+     <use xlink:href="#pc_LiberationSerif-32" transform="translate(50 0)"/>
+     <use xlink:href="#pc_LiberationSerif-32" transform="translate(100 0)"/>
+     <use xlink:href="#pc_LiberationSerif-2c" transform="translate(150 0)"/>
+     <use xlink:href="#pc_LiberationSerif-36" transform="translate(175 0)"/>
+     <use xlink:href="#pc_LiberationSerif-38" transform="translate(225 0)"/>
+     <use xlink:href="#pc_LiberationSerif-39" transform="translate(275 0)"/>
     </g>
    </g>
    <g id="pc_text_42">
@@ -11387,7 +11393,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pc_p303c66a600">
+  <clipPath id="pc_pb94111aff4">
    <rect x="0" y="0" width="518.4" height="128"/>
   </clipPath>
  </defs>
