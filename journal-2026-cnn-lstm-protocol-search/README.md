@@ -78,3 +78,11 @@ See `CITATION.cff`. Please cite the journal paper once published.
 ## Licence
 
 Code: MIT (see LICENSE). The NASA datasets are subject to the terms of the NASA Prognostics Data Repository.
+
+## Figures 7-14 and 21-25 (redrawn for the journal version)
+
+`figures/scripts/redraw_v30_figs.py DATA_DIR OUT_DIR` redraws these figures from the files in `figures/data`
+(put B0005.mat, from the NASA repository, in DATA_DIR as well). The images originally produced by the notebooks are
+kept unchanged in `figures/original_notebook_outputs` for comparison. The Stage 1 battery predictions of Figs. 9 and 10
+were not saved by the original runs; they were traced from the original plots, calibrated against the measured capacity,
+and reproduce the reported test RMSE (0.350 and 0.046 against 0.047 Ah).
