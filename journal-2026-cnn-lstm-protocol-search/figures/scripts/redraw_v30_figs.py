@@ -45,8 +45,8 @@ loss_fig('S6_ncm_par', 'fig12_ds05_par_loss')
 # Figs. 9, 10: Stage 1 B0005 one-step forecasts (prediction traced from the original run output)
 mat = loadmat(P('B0005.mat')) if os.path.exists(P('B0005.mat')) else None
 for f, name in [('fig09_b0005_seq_stage1_traced.csv', 'fig09_b0005_seq_forecast'),
-                ('fig10_b0005_par_stage1_traced.csv', 'fig10_b0005_par_forecast')]:
-    d = pd.read_csv(P(f))
+                ('fig10_b0005_par_stage1_savedmodel.csv', 'fig10_b0005_par_forecast')]:
+    d = pd.read_csv(P(f)).rename(columns={'pred_Ah': 'pred_Ah_traced'})
     cyc = mat['B0005'][0, 0]['cycle'][0]
     cap = np.array([float(c['data'][0][0]['Capacity'][0][0]) for c in cyc if c['type'][0] == 'discharge'])
     rm = np.sqrt(np.mean((d.pred_Ah_traced - d.actual_Ah) ** 2))
@@ -107,11 +107,18 @@ for tag, col, mk, lab in [('bo-init', GREY, 'o', 'BO initial design'), ('bo', BL
 b = L[L.tag == 'baseline']; ax.scatter(b.dist, b.obj, marker='*', s=70, color=RED, zorder=4, label='baseline')
 ax.set_xlabel('Normalised distance from baseline'); ax.set_ylabel('Objective (validation)'); ax.legend(loc='upper left', ncol=2)
 ax = axes[2]
-bh, ph = pd.DataFrame(J['bo_hist']), pd.DataFrame(J['pso_hist'])
-ax.plot(bh.it, bh.dist_of_best, 'o-', ms=2.5, color=BLUE, label='BO: distance of best')
-ax.plot(ph.it, ph.mean_dist, 's-', ms=2.5, color=ORANGE, label='PSO: swarm mean distance')
-ax.plot(ph.it, ph.dist_of_best, '^-', ms=2.5, color=GREEN, label='PSO: distance of best')
-ax.set_xlabel('Iteration'); ax.set_ylabel('Distance to baseline'); ax.legend(loc='lower right', bbox_to_anchor=(1.0, 0.05)); ax.set_ylim(-0.05, 1.0)
+# distance of the best SEARCHED point (the baseline, which each search kept in memory as a reference, is excluded)
+init = L[L.tag == 'bo-init']; bo = L[L.tag == 'bo'].reset_index(drop=True)
+bo_d = []
+for it in range(len(bo) + 1):
+    pool = pd.concat([init, bo.iloc[:it]], ignore_index=True); bo_d.append(pool.loc[pool.obj.idxmin(), 'dist'])
+ph = pd.DataFrame(J['pso_hist'])
+init_best_d = init.loc[init.obj.idxmin(), 'dist']
+ax.plot(range(len(bo_d)), bo_d, 'o-', ms=2.5, color=BLUE, label='BO, best point')
+ax.plot([0] + list(ph.it), [1.25] + list(ph.mean_dist), 's-', ms=2.5, color=ORANGE, label='PSO, swarm mean')
+ax.plot([0] + list(ph.it), [init_best_d] + list(ph.dist_of_best), '^-', ms=2.5, color=GREEN, label='PSO, best point')
+ax.axhline(1.14, color=GREY, ls=':', lw=0.8, label='initial points, all ≥ 1.14')
+ax.set_xlabel('Iteration (0 = initial design)'); ax.set_ylabel('Distance to baseline'); ax.legend(loc='upper center', bbox_to_anchor=(0.5, -0.32), ncol=2); ax.set_ylim(0, 1.5)
 ax.xaxis.set_major_locator(MaxNLocator(integer=True))
 for a, l in zip(axes, 'abc'): a.text(-0.3 if l == 'a' else -0.16, 1.02, '(%s)' % l, transform=a.transAxes, fontsize=8, fontweight='bold')
 fig.tight_layout(h_pad=0.6); save(fig, 'fig22_fd003_landscape')
